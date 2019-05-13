@@ -1,0 +1,22 @@
+install: install-deps
+
+run:
+	npx babel-node 'src/bin/lisp-in-js.js' "(+ 1 2)"
+
+install-deps:
+	npm install
+
+build:
+	rm -rf dist
+	npm run build
+
+test:
+	npm test
+
+lint:
+	npx eslint .
+
+publish:
+	npm publish
+
+.PHONY: test
