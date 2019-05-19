@@ -1,7 +1,7 @@
 install: install-deps
 
 run:
-	npx babel-node 'src/bin/lisp-in-js.js' "(+ 1 2)"
+	npx babel-node 'src/bin/lisp-in-js.js'
 
 install-deps:
 	npm install
