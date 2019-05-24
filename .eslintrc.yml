@@ -22,3 +22,4 @@ extends:
 rules:
   no-console: 0
   consistent-return: off
+  arrow-body-style: off
