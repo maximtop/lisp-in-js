@@ -22,7 +22,7 @@ const parseValue = (str) => {
     return false;
   }
   if (str in keywordValue) {
-    return keywordValue[str].key;
+    return keywordValue[str];
   }
 
   let result = parseFloat(str);

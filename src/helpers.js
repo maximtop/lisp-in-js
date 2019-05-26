@@ -24,9 +24,14 @@ export const nil = cons(null, null);
 
 export const isNull = list => car(list) === null && cdr(list) === null;
 
+export const ConsList = Function;
 
 export const limitOutput = inputString => (
   inputString.length > 20
     ? `${inputString.substring(0, 20)}...`
     : inputString
 );
+
+export const isString = (value) => {
+  return typeof value === 'string' || value instanceof String;
+};

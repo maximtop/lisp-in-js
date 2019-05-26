@@ -6,7 +6,7 @@ const parseAndShow = (str) => {
   return show(parseResult);
 };
 
-describe('interpreter', () => {
+describe('parser', () => {
   it('parses simple expressions', () => {
     expect(parseAndShow('(+ 1 2)')).toBe('(+ 1 2)');
     expect(parseAndShow("'(+ 1 2)")).toBe('(quote (+ 1 2))');
