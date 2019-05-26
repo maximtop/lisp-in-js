@@ -23,3 +23,4 @@ rules:
   no-console: 0
   consistent-return: off
   arrow-body-style: off
+  import/prefer-default-export: off
