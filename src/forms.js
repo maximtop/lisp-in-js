@@ -75,3 +75,11 @@ export class Symb {
     return this.value;
   }
 }
+
+export class Lambda {
+  constructor(args, body, env) {
+    this.args = args;
+    this.body = body;
+    this.env = env;
+  }
+}

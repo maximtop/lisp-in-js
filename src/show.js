@@ -1,4 +1,4 @@
-import { Symb, valueKeyword } from './forms';
+import { Symb, valueKeyword, Lambda } from './forms';
 import { isNull, car, cdr } from './helpers';
 
 export const show = (inputList) => {
@@ -16,6 +16,9 @@ export const show = (inputList) => {
   }
   if (input instanceof Symb) {
     return input.value;
+  }
+  if (input instanceof Lambda) {
+    return `(lambda ${show(inputList.args)} ${show(inputList.body)})`;
   }
   if (input instanceof Boolean || typeof input === 'boolean') {
     return input ? 'true' : 'false';
